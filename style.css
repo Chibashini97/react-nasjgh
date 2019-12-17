@@ -1,3 +1,25 @@
 h1, p {
   font-family: Lato;
 }
+.Log{
+  color: rgb(255, 158, 47);
+  text-align: center;
+  font-weight: bold;
+
+}
+.Decor{
+  position: fixed;
+  left: 65px;
+  top: 150px;
+  z-index: -1;
+  background-color: grey;
+  padding: 20px;
+  border: '5px solid green';
+    
+  
+}
+
+.Prog{
+  text-align: left;
+  font-weight: bold;
+}
