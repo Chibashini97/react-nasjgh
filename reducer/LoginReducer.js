@@ -4,7 +4,7 @@ const login = {
   isDoneAuthenticate : false,
 };
 
-function LoginReducer (state=login,action){
+const LoginReducer = (state=login,action) => {
   switch(action.type){
     case LOGIN_CLICK : 
       return 
