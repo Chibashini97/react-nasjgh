@@ -4,7 +4,9 @@ import Hello from "./Hello";
 import "./style.css";
 import Login from "./Login";
 import Display from "./Display";
-import LoginReducer from './LoginReducer';
+import LoginReducer from './reducer';
+import {createStore} from 'redux';
+import Provider from 'react-redux';
 
 const store = createStore(LoginReducer);
 class App extends Component {

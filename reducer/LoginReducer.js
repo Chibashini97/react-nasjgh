@@ -1,6 +1,10 @@
-import LOGIN_CLICK from '../../LoginActionType'
 
-function LoginReducer (state,action){
+
+const login = {
+  isDoneAuthenticate : false,
+};
+
+function LoginReducer (state=login,action){
   switch(action.type){
     case LOGIN_CLICK : 
       return 
