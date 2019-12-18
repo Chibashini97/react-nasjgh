@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Login from "./Login";
-
 import Logout from "./Logout";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
