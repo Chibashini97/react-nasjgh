@@ -10,6 +10,7 @@ import {
 import Display from "./Display";
 import Logout from "./Logout";
 import styles from './style.css';
+import {loadWelcome} from './action'
 
 
 export default class Login extends Component
@@ -32,10 +33,12 @@ export default class Login extends Component
     if(result)
     {
         alert("name submitted");
+        loadWelcome(dispatch);
        this.props.history.push('/Logout');
     }
       event.preventDefault();
   }
+
 
 
 

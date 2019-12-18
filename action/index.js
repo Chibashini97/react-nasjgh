@@ -1,0 +1,1 @@
+export {loadWelcome} from './loginAction'

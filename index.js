@@ -4,8 +4,11 @@ import Hello from "./Hello";
 import "./style.css";
 import Login from "./Login";
 import Display from "./Display";
+import LoginReducer from './LoginReducer';
 
+const store = createStore(LoginReducer);
 class App extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -22,4 +25,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById("root"));
+render(<Provider store={store}><App /></Provider>, document.getElementById("root"));
