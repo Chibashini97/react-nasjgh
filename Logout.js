@@ -15,7 +15,7 @@ handleChange(){
 render() {
     return (
       <div>
-        <button onClick={handleChange}></button>
+        <button onClick={this.handleChange}>Logout</button>
       </div>
     );
   }

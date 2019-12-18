@@ -8,7 +8,7 @@ import {
 	withRouter
 } from 'react-router-dom';
 import Display from "./Display";
-import HelloRenu from "./HelloRenu";
+import Logout from "./Logout";
 import styles from './style.css';
 
 
@@ -33,7 +33,7 @@ export default class Login extends Component
     {
         // this.setState({nameError:'',emailError:''})
         alert("name submitted");
-       this.props.history.push('/HelloRenu');
+       this.props.history.push('/Logout');
     }
       event.preventDefault();
   }
