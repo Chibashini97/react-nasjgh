@@ -79,9 +79,6 @@ export default class Login extends Component
         <b>UserName:</b><br /><input type="text" name="name" onChange={this.handleChange} value={this.state.name}/>
         <div style={{color:'red'}}> {this.state.nameError} </div>
         <br/>
-        // <b>Email ID:</b><br /><input type="text" name="email" onChange={this.handleChange} value={this.state.email}/>
-        // <div style={{color:'red'}}> {this.state.emailError} </div>
-        // <br />
         <b>Password:</b><br /><input type="password" name="password"  onChange={this.handleChange} value={this.state.password}/>
         <div style={{color:'red'}}> {this.state.passwordError} </div>
         <br />
