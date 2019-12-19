@@ -17,7 +17,7 @@ export default class Login extends Component
 {constructor(props)
     {
       super(props)
-      this.state={name:'Chibashini',password:'Chibashini',nameError:'',passwordError:''}
+      this.state={name:'',password:'',nameError:'',passwordError:''}
       this.handleChange=this.handleChange.bind(this);
       this.handleSubmit=this.handleSubmit.bind(this);
     }
@@ -34,7 +34,7 @@ export default class Login extends Component
     {
         alert("name submitted");
         loadWelcome(dispatch);
-       this.props.history.push('/Logout');
+        this.props.history.push('/Logout');
     }
       event.preventDefault();
   }
