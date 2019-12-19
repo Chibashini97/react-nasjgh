@@ -39,9 +39,6 @@ export default class Login extends Component
       event.preventDefault();
   }
 
-
-
-
   validate()
   {
       let nameError='';
