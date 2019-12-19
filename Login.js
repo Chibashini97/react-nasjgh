@@ -23,7 +23,7 @@ export default class Login extends Component {
     const result = this.validate();
     if (result) {
       alert("name submitted");
-      loadWelcome(dispatch);
+      this.props.showLoading(dispatch);
       this.props.history.push("/Logout");
     } 
   }
@@ -43,6 +43,12 @@ export default class Login extends Component {
     }
     return true;
   }
+
+   showLoading= () => {
+            return dispatch(loadWelcome);
+        }
+     
+
 
   render() {
     return (
