@@ -1,11 +1,15 @@
 import React from 'react'
 import LoginReducer from './LoginReducer'
 
-function Store(){
-  const store = createStore(LoginReducer);
-  <Provider store={store}>
-    <Login/>
-  </Provider>
+const StoreContext = createContext();
+
+function useStore(){
+  const store = React.useContext(StoreContext);
+  if(!store){
+    throw new error();
+  }
+  return store;
 }
 
-export {store}
+
+export {useStore}
