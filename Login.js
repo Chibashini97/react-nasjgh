@@ -12,6 +12,7 @@ export default class Login extends Component {
     this.state = { name: "", password: "", nameError: "", passwordError: "" };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.showLoading = this.showLoading.bind(this);
   }
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -23,8 +24,8 @@ export default class Login extends Component {
     const result = this.validate();
     if (result) {
       alert("name submitted");
-      this.props.showLoading(dispatch);
-      this.props.history.push("/Logout");
+      this.props.showLoading;
+      /this.props.history.push("/Logout");
     } 
   }
 
@@ -44,8 +45,8 @@ export default class Login extends Component {
     return true;
   }
 
-   showLoading= () => {
-            return dispatch(loadWelcome);
+   showLoading = () => {
+            return loadWelcome(dispatch);
         }
      
 

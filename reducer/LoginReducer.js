@@ -5,6 +5,7 @@ const login = {
 };
 
 const LoginReducer = (state=login,action) => {
+  console.log("sdfsf");
   switch(action.type){
     case LOGIN_CLICK : 
       return 
