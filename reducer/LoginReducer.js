@@ -1,3 +1,4 @@
+import {LOGIN_CLICK} from "../action_type";
 
 const login = {
   isDoneAuthenticate : false,

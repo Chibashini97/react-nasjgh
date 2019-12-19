@@ -4,11 +4,11 @@ import Hello from "./Hello";
 import "./style.css";
 import Login from "./Login";
 import Display from "./Display";
-import reducer from './reducer';
+import {LoginReducer} from './reducer';
 import {createStore} from 'redux';
-import Provider from 'react-redux';
+import {Provider} from 'react-redux';
 
-const store = createStore(reducer);
+const store = createStore(LoginReducer,{});
 class App extends Component {
   
   constructor() {
