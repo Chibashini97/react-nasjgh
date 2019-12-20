@@ -25,7 +25,7 @@ export default class Login extends Component {
     if (result) {
       alert("name submitted");
       this.props.showLoading;
-      /this.props.history.push("/Logout");
+      //this.props.history.push("/Logout");
     } 
   }
 
