@@ -24,7 +24,8 @@ export default class Login extends Component {
     const result = this.validate();
     if (result) {
       alert("name submitted");
-      this.props.showLoading;
+      //this.props.showLoading;
+      loadWelcome(dispatch);
       //this.props.history.push("/Logout");
     } 
   }
